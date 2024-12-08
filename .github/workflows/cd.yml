@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image 
-        run: docker build -t Dmasong/songdo .
+        run: docker build -t dmasong/songdo .
 
       - name: Push docker image 
-        run: docker push Dmasong/songdo:latest
+        run: docker push dmasong/songdo:latest
